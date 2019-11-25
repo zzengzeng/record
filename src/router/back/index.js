@@ -2,22 +2,24 @@ const back = r => require.ensure([], () => r(require('@/views/back/index.vue')),
 const test = r => require.ensure([], () => r(require('@/views/back/test.vue')), 'test');
 export default [
   {
-    path:'/',
-    redirect:'/back',
-    component:back
-  },
-  {
-    path:'/back/(modal)?',
-    component: back,
-    meta:{
-      title:'back'
-    }
-  },
-  {
-    path:'/test',
-    component: test,
-    meta:{
-      title:'test'
-    }
+    path:'/record',
+    redirect:'/record/back',
+    component:back,
+    children:[
+      {
+        path:'back/(modal)?',
+        component: back,
+        meta:{
+          title:'back'
+        }
+      },
+      {
+        path:'/test',
+        component: test,
+        meta:{
+          title:'test'
+        }
+      }
+    ]
   }
 ]
