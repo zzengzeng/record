@@ -11,6 +11,9 @@ function resolve(dir) {
 //用于生产环境去除多余的css
 const PurgecssPlugin = require("purgecss-webpack-plugin");
 module.exports = {
+  publicPath: process.env.NODE_ENV === 'production'
+  ? '/record/'
+  : '/',
   productionSourceMap: false,
   runtimeCompiler: true,
   chainWebpack: config => {
@@ -116,8 +119,5 @@ module.exports = {
         whitelistPatternsChildren: [/^token/, /^pre/, /^code/]
       }))
     }
-  },
-  publicPath: process.env.NODE_ENV === 'production'
-    ? '/record/'
-    : '/'
+  }
 }
