@@ -1,0 +1,191 @@
+@charset "UTF-8";
+img {
+  width: 100%;
+}
+/*超出显示省略号*/
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/*隐藏滚动条*/
+::-webkit-scrollbar {
+  display: none;
+}
+/*字体*/
+/*函数*/
+/*灰色背景*/
+.person {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 9;
+  overflow-y: auto;
+  overflow-x: hidden;
+  /*个人中心背景*/
+}
+.person .person-bgc {
+  width: 89.46666667vw;
+  height: 131.6vw;
+  margin: 6.66666667vw auto;
+  background-image: url('../img/centerbgc.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  /*个人中心关闭*/
+  /*个人中心*/
+}
+.person .person-bgc .person-close {
+  width: 9.33333333vw;
+  height: 9.33333333vw;
+  background-image: url('../img/ruleclose.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  float: right;
+}
+.person .person-bgc .person-center {
+  width: 78.8vw;
+  height: 84vw;
+  background-color: #fff;
+  border-radius: 1.06666667vw;
+  overflow: hidden;
+  position: absolute;
+  top: 42.4vw;
+  left: 50%;
+  margin-left: -39.33333333vw;
+  /*个人中心标题*/
+  /*个人中心记录*/
+}
+.person .person-bgc .person-center .person-top {
+  height: 10.66666667vw;
+  width: 100%;
+  text-align: center;
+  line-height: 10.66666667vw;
+  font-family: 微软雅黑;
+  font-size: 4vw;
+  color: #ffffff;
+  font-weight: bold;
+  background-color: #a40000;
+}
+.person .person-bgc .person-center .person-record {
+  width: 100%;
+  height: 62.66666667vw;
+  background-color: #fff;
+  /*头部内容*/
+  /*下边*/
+}
+.person .person-bgc .person-center .person-record .person-record-top {
+  width: 78.66666667vw;
+  height: 10.66666667vw;
+}
+.person .person-bgc .person-center .person-record .person-record-top div {
+  width: 39.2vw;
+  height: 10.66666667vw;
+  float: left;
+  border-bottom: 0.13333333vw #ebebeb solid;
+  font-family: "Microsoft YaHei UI";
+  text-align: center;
+  line-height: 10.66666667vw;
+  color: #333333;
+  font-size: 3.2vw;
+  font-weight: bold;
+}
+.person .person-bgc .person-center .person-record .person-record-top div:nth-child(1) {
+  width: 39.33333333vw;
+  border-right: 0.13333333vw #ebebeb solid;
+}
+.person .person-bgc .person-center .person-record .person-record-top .pCur {
+  border-bottom: 0.26666667vw #e60012 solid;
+  color: #e60012;
+}
+.person .person-bgc .person-center .person-record .person-record-down {
+  width: 64.8vw;
+  height: 54.66666667vw;
+  margin: 4vw 6.93333333vw;
+  overflow: hidden;
+}
+.person .person-bgc .person-center .person-record .person-record-down .record-bag {
+  width: 65.06666667vw;
+  height: 54.66666667vw;
+  overflow-y: auto;
+  overflow-x: hidden;
+  /*红包记录详情*/
+  /*奖券记录详情*/
+}
+.person .person-bgc .person-center .person-record .person-record-down .record-bag .redbag-record {
+  width: 64.8vw;
+  height: 5.33333333vw;
+  line-height: 4vw;
+  margin-bottom: 2vw;
+}
+.person .person-bgc .person-center .person-record .person-record-down .record-bag .redbag-record div {
+  float: left;
+  font-family: 微软雅黑;
+  font-size: 3.2vw;
+}
+.person .person-bgc .person-center .person-record .person-record-down .record-bag .redbag-record .redbag-record-left {
+  height: 5.33333333vw;
+  width: 45%;
+  color: #333333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.person .person-bgc .person-center .person-record .person-record-down .record-bag .redbag-record .redbag-record-left span:nth-child(2) {
+  margin-left: 1.86666667vw;
+}
+.person .person-bgc .person-center .person-record .person-record-down .record-bag .redbag-record .redbag-record-right {
+  height: 5.33333333vw;
+  width: 55%;
+  color: #999999;
+  text-align: right;
+}
+.person .person-bgc .person-center .person-record .person-record-down .record-bag .redbag-record .redbag-record-right span:nth-child(2) {
+  margin-left: 2.4vw;
+}
+.person .person-bgc .person-center .person-record .person-record-down .record-bag .record-ticket {
+  width: 64.8vw;
+  height: 5.33333333vw;
+  line-height: 4vw;
+  margin-bottom: 2vw;
+}
+.person .person-bgc .person-center .person-record .person-record-down .record-bag .record-ticket div {
+  float: left;
+  font-family: 微软雅黑;
+  font-size: 3.2vw;
+}
+.person .person-bgc .person-center .person-record .person-record-down .record-bag .record-ticket .rt-left {
+  height: 5.33333333vw;
+  width: 45%;
+  color: #333333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.person .person-bgc .person-center .person-record .person-record-down .record-bag .record-ticket .rt-right {
+  height: 5.33333333vw;
+  width: 55%;
+  color: #999999;
+  text-align: right;
+}
+.person .person-bgc .person-center .person-record .person-record-down .record-bag .record-ticket .rt-right span:nth-child(2) {
+  margin-left: 2.4vw;
+}
+.record-null {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.record-null img {
+  margin-top: 16.26666667vw;
+  width: 16vw;
+  height: 15.2vw;
+}
+.record-null p {
+  margin-top: 2.66666667vw;
+  font-size: 3.2vw;
+  color: #999999;
+}
