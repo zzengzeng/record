@@ -1,4 +1,4 @@
-# vue-exercise
+# record
 
 ## Project setup
 ```
