@@ -14,7 +14,7 @@ export default [
         }
       },
       {
-        path:'/test',
+        path:'test',
         component: test,
         meta:{
           title:'test'

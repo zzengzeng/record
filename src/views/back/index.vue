@@ -31,13 +31,13 @@ export default {
       if (this.visible) {
         this.$router.go(-1);
       } else {
-        this.$router.push("/back/modal");
+        this.$router.push("/record/back/modal");
       }
     },
     manageModal(toPath, fromPath) {
-      if (toPath === "/back/modal") {
+      if (toPath === "/record/back/modal") {
         this.visible = true;
-      } else if (fromPath === "/back/modal") {
+      } else if (fromPath === "/record/back/modal") {
         this.visible = false;
       }
     }
